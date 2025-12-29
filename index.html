@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Tahun Baru ❤️</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="relative">
+    <!-- Floating Hearts -->
+    <div class="floating-hearts">
+        <div class="heart" style="left: 10%; animation-duration: 12s;">❤️</div>
+        <div class="heart" style="left: 25%; animation-duration: 15s;">💕</div>
+        <div class="heart" style="left: 40%; animation-duration: 10s;">💖</div>
+        <div class="heart" style="left: 55%; animation-duration: 13s;">💗</div>
+        <div class="heart" style="left: 70%; animation-duration: 11s;">💓</div>
+        <div class="heart" style="left: 85%; animation-duration: 14s;">💞</div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="relative z-10 min-h-screen flex items-center justify-center px-4 py-12">
+        <div class="text-center fade-in max-w-3xl">
+            <div class="pulse mb-6 text-7xl md:text-8xl">💝</div>
+            <h1 class="text-5xl md:text-7xl font-light mb-6 text-gray-800 leading-tight">
+                Selamat Tahun Baru<br/>
+                <span class="font-semibold bg-gradient-to-r from-pink-600 to-rose-500 bg-clip-text text-transparent">Sayangku</span>
+            </h1>
+            <div class="typing-container mb-8">
+                <p id="typingText" class="text-lg md:text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto font-light"></p>
+            </div>
+            <button onclick="document.getElementById('counter').scrollIntoView()" class="bg-gradient-to-r from-pink-500 to-rose-500 text-white px-8 py-4 rounded-full font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                Mulai Perjalanan ❤️
+            </button>
+        </div>
+    </section>
+
+    <!-- COUNTER SECTION -->
+    <section id="counter" class="relative z-10 py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-xl text-center fade-in">
+                <h2 class="text-3xl md:text-4xl font-light mb-8 text-gray-800">Hari Bersama Kita</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div>
+                        <div class="counter-number" id="days">0</div>
+                        <div class="text-gray-600">Hari</div>
+                    </div>
+                    <div>
+                        <div class="counter-number" id="hours">0</div>
+                        <div class="text-gray-600">Jam</div>
+                    </div>
+                    <div>
+                        <div class="counter-number" id="minutes">0</div>
+                        <div class="text-gray-600">Menit</div>
+                    </div>
+                    <div>
+                        <div class="counter-number" id="seconds">0</div>
+                        <div class="text-gray-600">Detik</div>
+                    </div>
+                </div>
+                <p class="text-gray-600 mt-8 text-lg">Sejak hari pertama kita bersama ❤️</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE SECTION -->
+    <section class="relative z-10 py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-light text-center mb-16 text-gray-800 fade-in">Perjalanan Cinta Kita</h2>
+            
+            <div class="relative">
+                <div class="timeline-item relative">
+                    <!-- Timeline Item 1 -->
+                    <div class="mb-16 relative">
+                        <div class="timeline-dot"></div>
+                        <div class="md:ml-auto md:w-1/2 md:pl-12 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg ml-12">
+                            <div class="text-pink-500 font-semibold mb-2">🌟 Pertemuan Pertama</div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Awal Segalanya</h3>
+                            <p class="text-gray-600">Hari dimana takdir mempertemukan kita. Momen yang mengubah segalanya.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="mb-16 relative">
+                        <div class="timeline-dot"></div>
+                        <div class="md:mr-auto md:w-1/2 md:pr-12 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg ml-12 md:ml-0">
+                            <div class="text-pink-500 font-semibold mb-2">💕 Momen Spesial</div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Dekat di Hati</h3>
+                            <p class="text-gray-600">Saat kita mulai menyadari perasaan ini berbeda. Lebih dari sekadar teman.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="mb-16 relative">
+                        <div class="timeline-dot"></div>
+                        <div class="md:ml-auto md:w-1/2 md:pl-12 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg ml-12">
+                            <div class="text-pink-500 font-semibold mb-2">💖 Komitmen</div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Resmi Bersama</h3>
+                            <p class="text-gray-600">Hari dimana kita memutuskan untuk menjalani ini bersama. Selamanya.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <div class="relative">
+                        <div class="timeline-dot"></div>
+                        <div class="md:mr-auto md:w-1/2 md:pr-12 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg ml-12 md:ml-0">
+                            <div class="text-pink-500 font-semibold mb-2">🎊 Sekarang & Selamanya</div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Tahun Baru Bersama</h3>
+                            <p class="text-gray-600">Melangkah ke tahun baru dengan penuh harapan dan cinta yang semakin kuat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION (FOTO STUDIO) -->
+    <section id="gallery" class="relative z-10 py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-light text-center mb-4 text-gray-800 fade-in">Galeri Foto Kita</h2>
+            <p class="text-center text-gray-600 mb-12 fade-in">Momen indah yang diabadikan bersama</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+                <div class="img-hover rounded-2xl overflow-hidden shadow-lg bg-white">
+                    <img src="https://placehold.co/600x800/1a1a1a/FFFFFF?text=Our+Photo+1" alt="Foto Kita 1" class="w-full h-full object-cover">
+                </div>
+                <div class="img-hover rounded-2xl overflow-hidden shadow-lg bg-white">
+                    <img src="https://placehold.co/600x800/1a1a1a/FFFFFF?text=Our+Photo+2" alt="Foto Kita 2" class="w-full h-full object-cover">
+                </div>
+                <div class="img-hover rounded-2xl overflow-hidden shadow-lg bg-white">
+                    <img src="https://placehold.co/600x800/1a1a1a/FFFFFF?text=Our+Photo+3" alt="Foto Kita 3" class="w-full h-full object-cover">
+                </div>
+                <div class="img-hover rounded-2xl overflow-hidden shadow-lg bg-white">
+                    <img src="https://placehold.co/600x800/1a1a1a/FFFFFF?text=Our+Photo+4" alt="Foto Kita 4" class="w-full h-full object-cover">
+                </div>
+                <div class="img-hover rounded-2xl overflow-hidden shadow-lg bg-white">
+                    <img src="https://placehold.co/600x800/1a1a1a/FFFFFF?text=Our+Photo+5" alt="Foto Kita 5" class="w-full h-full object-cover">
+                </div>
+                <div class="img-hover rounded-2xl overflow-hidden shadow-lg bg-white">
+                    <img src="https://placehold.co/600x800/1a1a1a/FFFFFF?text=Our+Photo+6" alt="Foto Kita 6" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEMORY CARDS SECTION -->
+    <section class="relative z-10 py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-light text-center mb-12 text-gray-800 fade-in">Kartu Kenangan</h2>
+            <p class="text-center text-gray-600 mb-12">Hover untuk melihat cerita di baliknya</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center shadow-xl">
+                            <div class="text-center text-white">
+                                <div class="text-6xl mb-4">🌅</div>
+                                <h3 class="text-2xl font-semibold">Pagi Bersama</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back bg-white/90 backdrop-blur-sm p-6 flex items-center justify-center shadow-xl">
+                            <p class="text-gray-700 text-center">Setiap pagi terasa istimewa karena tahu aku punya kamu untuk berbagi hari.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center shadow-xl">
+                            <div class="text-center text-white">
+                                <div class="text-6xl mb-4">😄</div>
+                                <h3 class="text-2xl font-semibold">Tawa Kita</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back bg-white/90 backdrop-blur-sm p-6 flex items-center justify-center shadow-xl">
+                            <p class="text-gray-700 text-center">Tidak ada yang lebih indah dari mendengar tawamu. Itu adalah musik favorit ku.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front bg-gradient-to-br from-rose-400 to-red-500 flex items-center justify-center shadow-xl">
+                            <div class="text-center text-white">
+                                <div class="text-6xl mb-4">💍</div>
+                                <h3 class="text-2xl font-semibold">Janji Kita</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back bg-white/90 backdrop-blur-sm p-6 flex items-center justify-center shadow-xl">
+                            <p class="text-gray-700 text-center">Apapun yang terjadi, aku akan selalu di sini untukmu. Selamanya.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOVE LETTER SECTION -->
+    <section class="relative z-10 py-20 px-4">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-light text-center mb-12 text-gray-800 fade-in">Surat Cinta Untukmu</h2>
+            
+            <div class="letter relative h-96" id="loveLetter">
+                <div class="letter-content relative h-full">
+                    <!-- Front -->
+                    <div class="letter-front absolute w-full h-full">
+                        <div class="bg-gradient-to-br from-pink-500 to-rose-500 rounded-3xl p-12 shadow-2xl h-full flex flex-col items-center justify-center cursor-pointer" onclick="document.getElementById('loveLetter').classList.add('open')">
+                            <div class="text-white text-center">
+                                <div class="text-6xl mb-6">💌</div>
+                                <h3 class="text-3xl font-light mb-4">Untuk Orang Terspesial</h3>
+                                <p class="text-pink-100 mb-6">Klik untuk membuka</p>
+                                <div class="text-4xl">❤️</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Back -->
+                    <div class="letter-back absolute w-full h-full">
+                        <div class="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl h-full overflow-y-auto">
+                            <div class="text-gray-700 space-y-4 text-center">
+                                <p class="text-lg italic">"Untuk sayangku,"</p>
+                                <p>Terima kasih sudah menjadi alasan terbaikku untuk bangun setiap pagi. Kamu adalah hadiah terindah yang pernah aku terima.</p>
+                                <p>Di tahun baru ini, aku berharap kita terus tumbuh bersama, menghadapi segala tantangan berdampingan, dan merayakan setiap kebahagiaan kecil.</p>
+                                <p>Aku mungkin tidak sempurna, tapi aku janji akan selalu berusaha menjadi yang terbaik untukmu.</p>
+                                <p class="font-semibold pt-4">Selamat Tahun Baru, cintaku.</p>
+                                <p class="italic">— Dengan segenap cinta ❤️</p>
+                                <button onclick="document.getElementById('loveLetter').classList.remove('open')" class="mt-6 bg-gradient-to-r from-pink-500 to-rose-500 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all">
+                                    Tutup Surat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WISHES SECTION -->
+    <section class="relative z-10 py-20 px-4">
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-gradient-to-br from-pink-500 to-rose-500 rounded-3xl p-8 md:p-12 shadow-2xl text-white text-center fade-in">
+                <h2 class="text-4xl md:text-5xl font-light mb-6">Harapan untuk Kita</h2>
+                <div class="space-y-4 text-lg leading-relaxed mb-8">
+                    <p>✨ Semoga cinta kita semakin dalam seiring berjalannya waktu</p>
+                    <p>🌟 Semoga kita selalu menemukan alasan untuk tersenyum bersama</p>
+                    <p>💫 Semoga setiap hari membawa kita lebih dekat satu sama lain</p>
+                    <p>🎊 Semoga tahun ini penuh kebahagiaan, kesehatan, dan kesuksesan</p>
+                </div>
+                <div class="text-6xl mb-6">💕</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLOSING SECTION -->
+    <section class="relative z-10 py-24 px-4 text-center">
+        <div class="max-w-2xl mx-auto fade-in">
+            <p class="text-2xl md:text-3xl font-light text-gray-800 mb-6 leading-relaxed">
+                "Bersamamu, setiap momen menjadi kenangan yang berharga."
+            </p>
+            <p class="text-lg text-gray-600 italic mb-8">Selamat Tahun Baru 2025, Sayangku ❤️</p>
+            <button onclick="createFireworks()" class="bg-gradient-to-r from-pink-500 to-rose-500 text-white px-8 py-4 rounded-full font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                🎆 Nyalakan Kembang Api
+            </button>
+            <div class="mt-12 text-5xl">💖</div>
+        </div>
+    </section>
+
+    <footer class="relative z-10 py-8 text-center text-gray-600 text-sm">
+        <p>Made with ❤️ for someone special • 2025</p>
+    </footer>
+
+    <script>
+        // Typing Animation
+        const quotes = [
+            "Terima kasih sudah menjadi alasan terbaik untuk tersenyum setiap hari.",
+            "Mari kita sambut tahun baru dengan penuh cinta dan harapan.",
+            "Bersamamu, setiap hari adalah perayaan cinta yang indah."
+        ];
+        let quoteIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        
+        function typeWriter() {
+            const element = document.getElementById('typingText');
+            const currentQuote = quotes[quoteIndex];
+            
+            if (!isDeleting && charIndex <= currentQuote.length) {
+                element.textContent = currentQuote.substring(0, charIndex);
+                charIndex++;
+                setTimeout(typeWriter, 100);
+            } else if (isDeleting && charIndex >= 0) {
+                element.textContent = currentQuote.substring(0, charIndex);
+                charIndex--;
+                setTimeout(typeWriter, 50);
+            } else if (!isDeleting && charIndex > currentQuote.length) {
+                setTimeout(() => { isDeleting = true; typeWriter(); }, 2000);
+            } else if (isDeleting && charIndex < 0) {
+                isDeleting = false;
+                quoteIndex = (quoteIndex + 1) % quotes.length;
+                setTimeout(typeWriter, 500);
+            }
+        }
+        
+        // Counter
+        const startDate = new Date('2023-12-09T00:00:00'); // Ganti dengan tanggal kalian mulai!
+        
+        function updateCounter() {
+            const now = new Date();
+            const diff = now - startDate;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+        }
+        
+        // Fireworks
+        function createFireworks() {
+            for (let i = 0; i < 50; i++) {
+                setTimeout(() => {
+                    const firework = document.createElement('div');
+                    firework.className = 'firework';
+                    firework.style.left = Math.random() * window.innerWidth + 'px';
+                    firework.style.top = Math.random() * window.innerHeight + 'px';
+                    firework.style.background = `hsl(${Math.random() * 360}, 100%, 60%)`;
+                    document.body.appendChild(firework);
+                    
+                    const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#f9ca24', '#ee5a6f'];
+                    for (let j = 0; j < 20; j++) {
+                        const particle = document.createElement('div');
+                        particle.className = 'firework';
+                        particle.style.left = firework.style.left;
+                        particle.style.top = firework.style.top;
+                        particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+                        document.body.appendChild(particle);
+                        
+                        const angle = (Math.PI * 2 * j) / 20;
+                        const velocity = 2 + Math.random() * 2;
+                        let x = parseFloat(firework.style.left);
+                        let y = parseFloat(firework.style.top);
+                        
+                        const animate = () => {
+                            x += Math.cos(angle) * velocity;
+                            y += Math.sin(angle) * velocity;
+                            particle.style.left = x + 'px';
+                            particle.style.top = y + 'px';
+                            particle.style.opacity = parseFloat(particle.style.opacity || 1) - 0.02;
+                            
+                            if (parseFloat(particle.style.opacity) > 0) {
+                                requestAnimationFrame(animate);
+                            } else {
+                                particle.remove();
+                            }
+                        };
+                        animate();
+                    }
+                    setTimeout(() => firework.remove(), 1000);
+                }, i * 50);
+            }
+        }
+        
+        // Snow Effect
+        function createSnowflake() {
+            const snowflake = document.createElement('div');
+            snowflake.className = 'snowflake';
+            snowflake.innerHTML = ['❄️', '❅', '❆'][Math.floor(Math.random() * 3)];
+            snowflake.style.left = Math.random() * window.innerWidth + 'px';
+            snowflake.style.animationDuration = (Math.random() * 3 + 2) + 's';
+            snowflake.style.opacity = Math.random();
+            snowflake.style.fontSize = (Math.random() * 10 + 10) + 'px';
+            document.body.appendChild(snowflake);
+            
+            setTimeout(() => snowflake.remove(), 5000);
+        }
+        
+        // Dynamic Hearts
+        setInterval(() => {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.animationDuration = (Math.random() * 8 + 8) + 's';
+            const hearts = ['❤️', '💕', '💖', '💗', '💓', '💞'];
+            heart.innerHTML = hearts[Math.floor(Math.random() * hearts.length)];
+            document.querySelector('.floating-hearts').appendChild(heart);
+            setTimeout(() => heart.remove(), 16000);
+        }, 3000);
+        
+        // Initialize
+        window.addEventListener('load', () => {
+            typeWriter();
+            updateCounter();
+            setInterval(updateCounter, 1000);
+            setInterval(createSnowflake, 300);
+        });
+    </script>
+</body>
+</html>
